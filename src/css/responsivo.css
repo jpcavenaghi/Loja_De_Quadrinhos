@@ -1,0 +1,45 @@
+@media(max-width:990px) {
+
+    .manual-navigation,
+    .auto-btn1,
+    .auto-btn2,
+    .auto-btn3 {
+        display: none;
+    }
+}
+
+@media(max-width:425px) {
+    .cabecalho .titulo {
+        font-size: 25px;
+    }
+
+    .cabecalho img {
+        height: 70px;
+        width: 100px;
+    }
+
+    .topicos {
+        padding: 0;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .slider .slides {
+        height: 50%;
+    }
+
+    .fundo-catalogo {
+        background: none;
+        box-shadow: none;
+    }
+
+    .fundo-catalogo .cat-wrapper {
+        justify-content: center;
+    }
+
+    .container-btn a {
+        width: 50%;
+    }
+}

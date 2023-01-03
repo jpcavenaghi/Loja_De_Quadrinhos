@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja De Quadrinhos</title>
+
+    <link rel="shortcut icon" href="src/imagens/boom.png" type="image/x-icon">
+
+    <!-- link fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+
+    <!-- link css -->
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilo.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+    <link rel="stylesheet" href="./src/css/menu.css">
+
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="imagem-nome">
+            <img src="src/imagens/boom.png" alt="boom">
+            <h1 class="titulo">MAGAZINE</h1>
+        </div>
+    </header>
+
+    <nav class="topicos">
+
+        <input type="checkbox" id="menu-hamburguer">
+        <label for="menu-hamburguer">
+            <div class="menu">
+                <span class="hamburguer"></span>
+            </div>
+        </label>
+
+        <ul>
+            <li><a href="">Início</a></li>
+            <li> <a href="">Lançamentos</a></li>
+            <li> <a href="">Ofertas especiais</a></li>
+            <li> <a href="">Mangás</a> </li>
+            <li> <a href="">Autografados</a></li>
+            <li> <a href="">Raridades</a></li>
+        </ul>
+    </nav>
+
+    <h2 id="confira">Confira Nossas Melhores Coletaneas!!!</h2>
+
+    <!-- Carrossel -->
+
+    <div class="slider">
+
+        <div class="slides">
+
+            <!-- slide buttons -->
+            <input type="radio" name="radio-bt" id="radio1">
+            <input type="radio" name="radio-bt" id="radio2">
+            <input type="radio" name="radio-bt" id="radio3">
+
+
+            <!-- slide images -->
+            <div class="slide first">
+                <img src="src/imagens/Marvelart.jpg" alt="Arte Marvel">
+            </div>
+            <div class="slide 2">
+                <img src="src/imagens/Hunterart.png" alt="Arte HunterXHunter">
+            </div>
+            <div class="slide 3">
+                <img src="src/imagens/tboysart.png" alt="Arte The Boys">
+            </div>
+
+            <!-- Navigation Auto -->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+
+
+        </div>
+
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+        </div>
+
+    </div>
+
+    <!-- catálogo -->
+
+    <div class="fundo-catalogo">
+
+        <h2 id="tit-catalogo">Os mais vendidos da semana</h2>
+
+        <div class="catalogo-wrapper">
+
+            <div class="card-item">
+                <img src="src/imagens/Mboruto.jpg" alt="Mangá Boruto">
+                <div class="card-content">
+                    <h3 class="item-name"><strong>Boruto: Naruto Next Generations Vol. 13</strong></h3>
+                    <p class="preco">R$ 23,90</p>
+                    <button type="button" class="btn-buy">Eu quero esse!</button>
+                </div>
+            </div>
+
+            <div class="card-item">
+                <img src="src/imagens/HQmiranha.jpg" alt="HQ miranha">
+                <div class="card-content">
+                    <h3 class="item-name"><strong>O Espetacular Homem-Aranha - 25</strong></h3>
+                    <p class="preco">R$ 16,70</p>
+                    <button type="button" class="btn-buy">Eu quero esse!</button>
+                </div>
+            </div>
+
+            <div class="card-item">
+                <img src="src/imagens/HQbatman.jpg" alt="HQ Batman">
+                <div class="card-content">
+                    <h3 class="item-name"><strong>Batman: A Tumba Do Rei Tut</strong></h3>
+                    <p class="preco">R$ 30,81</p>
+                    <button type="button" class="btn-buy">Eu quero esse!</button>
+                </div>
+            </div>
+
+            <div class="card-item">
+                <img src="src/imagens/HQinvicible.jpg" alt="HQ Invicible">
+                <div class="card-content">
+                    <h3 class="item-name"><strong>Invincible: The Ultimate Collection Volume 12</strong></h3>
+                    <p class="preco">R$ 37,28</p>
+                    <button type="button" class="btn-buy">Eu quero esse!</button>
+                </div>
+            </div>
+
+            <div class="card-item">
+                <img src="src/imagens/MOnepman.jpg" alt="Mangá Boruto">
+                <div class="card-content">
+                    <h3 class="item-name"><strong>One-Punch Man Vol.02</strong></h3>
+                    <p class="preco">R$ 39,99</p>
+                    <button type="button" class="btn-buy">Eu quero esse!</button>
+                </div>
+            </div>
+
+            <div class="card-item">
+                <img src="src/imagens/HQtwd.jpg" alt="Mangá Boruto">
+                <div class="card-content">
+                    <h3 class="item-name"><strong>The Walking Dead Vol.08: Nascidos Para Sofrer</strong></h3>
+                    <p class="preco">R$ 25,11</p>
+                    <button type="button" class="btn-buy">Eu quero esse!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-btn">
+        <a href="indextrad.html"><button type="button" id="btn-trad">Região: Brasil</button></a>
+    </div>
+
+    <!-- link js -->
+    <script src="src/js/index.js"></script>
+</body>
+
+</html>

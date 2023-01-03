@@ -1,0 +1,294 @@
+body {
+    background-image: linear-gradient(to top, #F20505, #D93D04, #F27405, #F29F05, #F2B705);
+}
+
+.cabecalho {
+    background-image: url(../imagens/fundored2.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.cabecalho .imagem-nome {
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho .titulo {
+    font-family: 'corp', Helvetica, sans-serif;
+    font-size: 40px;
+    color: #fff;
+}
+
+.cabecalho img {
+    height: 100px;
+    width: 130px;
+}
+
+/* Menu Horizontal */
+
+.topicos {
+    background-color: black;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topicos ul li {
+    display: inline;
+    padding: 20px;
+}
+
+.topicos ul li a {
+    margin: 20px;
+    font-size: 20px;
+    color: #fff;
+    transition: 0.7s;
+}
+
+/* Carrosel */
+
+
+.slider {
+    margin: 0 auto;
+    width: 95%;
+    height: auto;
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+.slider .slides {
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slider .slides input {
+    display: none;
+}
+
+.slides .slide {
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.manual-navigation {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    margin-left: 260px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background-color: rgb(255, 255, 91);
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -25%;
+}
+
+#radio3:checked~.first {
+    margin-left: -50%;
+}
+
+.navigation-auto div {
+    border: 2px solid yellow;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto {
+    position: absolute;
+    width: 800px;
+    margin-left: 260px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked~.navigation-auto .auto-btn1,
+#radio2:checked~.navigation-auto .auto-btn2,
+#radio3:checked~.navigation-auto .auto-btn3 {
+    background-color: yellow;
+}
+
+/* Catálogo */
+
+.fundo-catalogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../imagens/fundoy.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 80px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+
+.fundo-catalogo .catalogo-wrapper {
+    max-width: 90%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    grid-gap: 30px;
+    padding-bottom: 20px;
+}
+
+.catalogo-wrapper .card-item {
+    height: 400px;
+    max-width: 100%;
+    background-color: #f20505d0;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card-item img {
+    height: 250px;
+    width: 175px;
+    padding: 15px;
+}
+
+.card-item .card-content {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card-item .preco {
+    font-size: 20px;
+    padding: 7px;
+}
+
+.card-item .btn-buy {
+    width: 167px;
+    padding: 15px 0px;
+    border: none;
+    background-color: #000cf5c5;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.card-item .btn-buy:hover {
+    background-color: #fff;
+    color: #000cf5c5;
+}
+
+.item-name {
+    padding: 5px;
+    color: #fff;
+}
+
+/* ---botão traduzir--- */
+
+.container-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.container-btn a {
+    display: flex;
+    width: 25%;
+    height: 60px;
+    margin: 25px;
+
+}
+
+a #btn-trad {
+    width: 100%;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    background-color: black;
+    color: #fff;
+}
+
+#btn-trad:hover {
+    color: black;
+    background-color: #fff;
+}
+
+/*--- GERAIS ---*/
+
+.titulo-carrosel,
+.fundo-catalogo .titulo-catalogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    font-size: 35px;
+    font-family: 'aveng', Helvetica, sans-serif;
+}
+
+.topicos,
+.card-item,
+#btn-trad {
+    font-family: 'Outfit', Geneva, Tahoma, sans-serif;
+}
+
+.slider,
+.fundo-catalogo,
+.catalogo-wrapper .card-item,
+a #btn-trad {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@font-face {
+    font-family: 'aveng';
+    src: url('../fonte/AVENGEANCE HEROIC AVENGER AT.ttf') format('truetype');
+    font-size: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'corp';
+    src: url(../fonte/corp.ttf) format('truetype');
+}
